@@ -53,5 +53,10 @@ export default function Movie(props) {
       </div>
       <div className="save-button">Save</div>
     </div>
+    {/*
+    <Route>
+      <MovieCard />
+    </Route>
+    */}
   );
 }

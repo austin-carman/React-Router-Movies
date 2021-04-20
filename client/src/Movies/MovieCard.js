@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 export default function MovieCard (props) {
+  const { title, director, metascore, id } = props.movie;
+
   return(
     <div className="save-wrapper">
       <Link to={`/movies/${id}`}>
@@ -22,7 +25,6 @@ export default function MovieCard (props) {
 }
 
 function ActorList(props) {
-  const { title, director, metascore, id } = props.movie;
   return (
     <>
       <h3>Actors</h3>
